@@ -23,11 +23,13 @@ export default function RootLayout({
 }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
-     
+      <ClerkProvider>
+
         <body className={`${inter.className} bg-dark-2`}>
           {/* <Toaster /> */}
           {children}
         </body>
+      </ClerkProvider>
     </html>
   );
 }
