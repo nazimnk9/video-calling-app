@@ -1,6 +1,16 @@
 import React, { ReactNode } from 'react'
 import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "video_call_app",
+  description: "Video calling App",
+  icons: {
+    icon: "/icons/Video.png",
+  },
+};
+
 const HomeLayout = ({ children }: { children: ReactNode }) => {
     return (
         <main className='relative'>
