@@ -4,7 +4,6 @@ import Image from 'next/image'
 import MobileNav from './MobileNav'
 import {
   SignedIn,
-  SignedOut,
   UserButton,
 } from '@clerk/nextjs'
 const Navbar = () => {
